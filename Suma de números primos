@@ -1,0 +1,21 @@
+def es_primo(numero):
+    if numero < 2:
+        return False
+    
+  int(numero**0.5) + 1 para ir más rápido
+    limite_busqueda = int(numero ** 0.5) + 1
+  
+for i in range(2, limite_busqueda):
+        if numero % i == 0:
+            return False
+            
+  return True
+
+suma_total = 0
+limite = 2000000
+
+for num in range(2, limite):
+    if es_primo(num):
+        suma_total += num  # Manera corta de sumar
+
+print("La suma de los primos es:", suma_total)
